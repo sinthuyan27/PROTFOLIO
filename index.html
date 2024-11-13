@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/71d4a37b97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 style="font-size: 50px; font-family:sans-serif;"><span
+                        style="color: crimson; font-size: 70px;">S</span>inthu</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>wep Developer</p>
+                <h1>Hi, I'm <span>Sinthujan</span><br>from srilanka</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo-2024-11-12-23-04-22_720.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm sinthujan from srilanka.My age is 20.my A/L subject is combined maths.I got C2S in
+                        A/L.Now i am learning web development in UKI</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Designing Web/App interfaces</li>
+                            <li><span>CSS</span><br>Designing Web/App interfaces</li>
+                            <li><span>Java Script</span><br>Designing Web/App interfaces</li>
+                            <li><span>Node.js</span><br>Designing Web/App interfaces</li>
+                            <li><span>Python</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>None</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2023</span><br>Advance level in Chavakachcheri Hindu college</li>
+                            <li><span>2024-2025</span><br>UKI Codeing school</li>
+                            <li><span>2024-2027</span><br>Bachelor of information technology in moratuwa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------services---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2><p>I'm a web designer.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p> I'm a UI/UX Designer. I'm a UI/UX Designer. I'm a UI/UX Designer. I'm a UI/UX Designer. I'm a
+                        UI/UX Designer.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p> I'm a UI/UX Designer. I'm a UI/UX Designer. I'm a UI/UX Designer. I'm a UI/UX Designer. I'm a
+                        UI/UX Designer.</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-----------------portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="forth.jpg">
+                    <div class="layer">
+                        <h3>Dice game</h3>
+                        <p>This is a wepsite for dice game</p>
+                        <a href="https://sinthuyan27.github.io/dice-game/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="second.jpg">
+                    <div class="layer">
+                        <h3>Drag and drop</h3>
+                        <p>This is a wepsite for drag and drop</p>
+                        <a href="https://sinthuyan27.github.io/drag-and-drop/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="third.jpg">
+                    <div class="layer">
+                        <h3>clock app</h3>
+                        <p>This is a wepsite for clock</p>
+                        <a href="https://sinthuyan27.github.io/online-social-app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Nanthakumarsinthuyan13@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0740048793</p>
+                    <p><i class="fa-solid fa-address-book"></i>kachchai road,kodikamam </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/19iLtTU9Nq/?mibextid=LQQJ4d" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sinthuyan27/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/sinthuyan27" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="http://linkedin.com/in/nanthakumar-sinthujan-249258319" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://www.facebook.com/share/19iLtTU9Nq/?mibextid=LQQJ4d" target="_blank"
+                        class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">hello</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> sinthuyan27</p>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
